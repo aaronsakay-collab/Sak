@@ -1,0 +1,28 @@
+<?php
+// Activity #3 - Grade Evaluator
+// Name: Sakay Mark Aaron P.
+// CYS: BSIS-2A
+
+$sakay_average = 80;
+
+if ($sakay_average >=78.5) {
+    $remarks = "Passed";
+} else {
+    $remarks = "Failed";
+}
+
+if ($sakay_average >= 90) {
+    $letter_grade = "A";
+} elseif ($sakay_average >= 80) {
+    $letter_grade = "B";
+} elseif ($sakay_average >= 70) {
+    $letter_grade = "C";
+} elseif ($sakay_average >= 60) {
+    $letter_grade = "D";
+} else {
+    $letter_grade = "F";
+}
+
+echo "Sakay's Average Grade: " . $sakay_average . "<br>";
+echo "Remarks: " . $remarks . "<br>";
+echo "Letter Grade: " . $letter_grade;
